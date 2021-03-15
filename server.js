@@ -34,6 +34,7 @@ app.post('/api/notes', function (req, res) {
   req.body.id = uniqid();
   notesData.push(req.body);
   fs.writeFileSync("./db/db.json", JSON.stringify(notesData));
+  res.end();
 });
 
 app.delete('/api/notes/:id', function (req, res) {
@@ -42,4 +43,5 @@ app.delete('/api/notes/:id', function (req, res) {
   notesData = JSON.parse(notesData);
   notesData.splice(getID, 1);
   fs.writeFileSync('./db/db.json', JSON.stringify(notesData));
+  res.end();
 })
