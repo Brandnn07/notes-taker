@@ -15,7 +15,7 @@ This app allows the user to type in the title of their note and write down whate
 ## Installation 
 _______________________________
 
-Simply click the link [here!](https://brandnn07.github.io/notes-taker/)
+Simply click the link [here!](https://lit-atoll-32515.herokuapp.com/)
 
 ## Github
 _______________________________
